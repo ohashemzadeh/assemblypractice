@@ -20,8 +20,8 @@ objcopy -O binary --only-section=.text ./$FILE_NAME.o ./$FILE_NAME.bin;
 - `readelf -a hello_world`
 
 and 
-
-- `objdump -d -Mintel hello_world`
+- To disassemble your program:
+- `objdump -d -M intel -d hello_world`
 
 # How to solve challenges in `pwncollege` website:
 
