@@ -3,12 +3,11 @@ from pwn import *
 # Write your code here
 code = '''
 
-mov rax, rdi
-mov rbx, rsi
+mov rax , 0x0
+mov rbx , 0x0
 
-div rbx
-mov rax, rdx
-
+mov al , dil
+mov bx , si
 '''
 
 context.arch = 'amd64'
