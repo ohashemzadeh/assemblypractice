@@ -15,6 +15,14 @@ objcopy -O binary --only-section=.text ./$FILE_NAME.o ./$FILE_NAME.bin;
 ./$FILE_NAME
 ```
 
+# How to check object <file(s)>
+
+- `readelf -a hello_world`
+
+and 
+
+- `objdump -d -Mintel hello_world`
+
 # How to solve challenges in `pwncollege` website:
 
 - Here we are gonna practice some assembly.
