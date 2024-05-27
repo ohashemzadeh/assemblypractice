@@ -15,13 +15,17 @@ objcopy -O binary --only-section=.text ./$FILE_NAME.o ./$FILE_NAME.bin;
 ./$FILE_NAME
 ```
 
+# Extracting the Binary Code
+
+- `objcopy --dump-section .text=helloworld_binary_code helloworld`
+
 # How to check object <file(s)>
 
 - `readelf -a hello_world`
 
 and 
-
-- `objdump -d -Mintel hello_world`
+- To disassemble your program:
+- `objdump -d -M intel -d hello_world`
 
 # How to solve challenges in `pwncollege` website:
 
