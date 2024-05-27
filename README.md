@@ -49,12 +49,10 @@ from pwn import *
 
 
 code = '''
-
-; Write your code here.
-mov rax, 0x1337
-mov r12, 0xCAFED00D1337BEEF
-mov rsp, 0x31337
-
+mov rdi, 0x92c7dad8fa239f91
+shr rdi, 32
+xor rax, rax
+mov al, dil
 '''
 
 context.arch = 'amd64'
